@@ -1,3 +1,4 @@
+import Main from "./components/Main";
 import Signin from "./components/Signin";
 
 
@@ -5,7 +6,8 @@ function App() {
 
   return (
     <>
-      <Signin/>
+      {/* <Signin/> */}
+      <Main/>
     </>
   )
 }
