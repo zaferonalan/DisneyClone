@@ -1,3 +1,4 @@
+import { Route, Routes } from "react-router-dom";
 import Main from "./components/Main";
 import Signin from "./components/Signin";
 
@@ -5,10 +6,12 @@ import Signin from "./components/Signin";
 function App() {
 
   return (
-    <>
-      {/* <Signin/> */}
-      <Main/>
-    </>
+    <div>
+      <Routes>
+        <Route path="/sigin" element={<Signin/>}/>
+        <Route path="/" element={<Main/>}/>
+      </Routes>
+    </div>
   )
 }
 
